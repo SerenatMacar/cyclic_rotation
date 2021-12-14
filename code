@@ -1,0 +1,19 @@
+def solution(A,K):
+    N = len(A)
+    if type(N)==int==type(K) and 101>N>-1 and 101>K>-1:
+        for i in A:
+            if i<1001 and i>-1001 and type(i)==int:
+                if K>len(A):
+                    K = K%len(A) 
+                    return A[len(A)-K:]+A[:len(A)-K]
+                elif K == len(A):
+                    A = A
+                    return A
+                else:
+                    return A[len(A)-K:]+A[:len(A)-K]
+            else:
+                raise Exception("Input Error") 
+    if A==[] or N==0 or N==1:
+        return A
+    else:
+        raise Exception("Input Error") 
