@@ -1,4 +1,4 @@
-def solution(A,K):
+def cyclic_rotation(A,K):
     N = len(A)
     if type(N)==int==type(K) and 101>N>-1 and 101>K>-1:
         for i in A:
